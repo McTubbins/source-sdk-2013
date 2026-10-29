@@ -42,8 +42,8 @@ public:
 		if ( modelinfo )
 		{
 			SetModelIndexOverride( VISION_MODE_NONE, modelinfo->GetModelIndex( GetPowerupModel() ) );
-			SetModelIndexOverride( VISION_MODE_PYRO, modelinfo->GetModelIndex( TF_MEDKIT_LARGE_BDAY ) );
-			SetModelIndexOverride( VISION_MODE_HALLOWEEN, modelinfo->GetModelIndex( TF_MEDKIT_LARGE_HALLOWEEN ) );
+			SetModelIndexOverride( VISION_MODE_PYRO, modelinfo->GetModelIndex(GetPowerupModelOrFallback( TF_MEDKIT_LARGE_BDAY ) ) );
+			SetModelIndexOverride( VISION_MODE_HALLOWEEN, modelinfo->GetModelIndex( GetPowerupModelOrFallback( TF_MEDKIT_LARGE_HALLOWEEN ) ) );
 		}
 	}
 
@@ -118,7 +118,7 @@ public:
 		{
 			SetModelIndexOverride( VISION_MODE_NONE, modelinfo->GetModelIndex( GetPowerupModel() ) );
 			SetModelIndexOverride( VISION_MODE_PYRO, modelinfo->GetModelIndex( GetPowerupModelOrFallback( TF_MEDKIT_MEDIUM_BDAY ) ) );
-			SetModelIndexOverride( VISION_MODE_HALLOWEEN, modelinfo->GetModelIndex( GetPowerupModelOrFallback(TF_MEDKIT_MEDIUM_HALLOWEEN ) ) );
+			SetModelIndexOverride( VISION_MODE_HALLOWEEN, modelinfo->GetModelIndex( GetPowerupModelOrFallback( TF_MEDKIT_MEDIUM_HALLOWEEN ) ) );
 		}
 	}
 
@@ -164,8 +164,8 @@ public:
 		if ( modelinfo )
 		{
 			SetModelIndexOverride( VISION_MODE_NONE, modelinfo->GetModelIndex( GetPowerupModel() ) );
-			SetModelIndexOverride( VISION_MODE_PYRO, modelinfo->GetModelIndex( GetPowerupModelOrFallback(TF_MEDKIT_MEDIUM_BDAY ) ) );
-			SetModelIndexOverride( VISION_MODE_HALLOWEEN, modelinfo->GetModelIndex( GetPowerupModelOrFallback(TF_MEDKIT_MEDIUM_HALLOWEEN ) ) );
+			SetModelIndexOverride( VISION_MODE_PYRO, modelinfo->GetModelIndex( GetPowerupModelOrFallback( TF_MEDKIT_MEDIUM_BDAY ) ) );
+			SetModelIndexOverride( VISION_MODE_HALLOWEEN, modelinfo->GetModelIndex( GetPowerupModelOrFallback( TF_MEDKIT_MEDIUM_HALLOWEEN ) ) );
 		}
 	}
 
